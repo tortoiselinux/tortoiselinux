@@ -1,5 +1,4 @@
 import Link from "next/link";
-import TortoiseASCII from "src/components/tortoiseASCII";
 export default function Navbar() {
   return (
     <header>

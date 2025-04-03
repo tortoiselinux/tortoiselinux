@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import profilePic from "../assets/tortoise.jpeg";
 import TortoiseASCII from "src/components/tortoiseASCII";
 
 // <a href="https://github.com/tortoiselinux">

@@ -1,9 +1,14 @@
-export default function TortoiseASCII({ fontSize = "10px" }) {
+interface TortoiseASCIIProps {
+  className?: string;
+}
+
+export default function TortoiseASCII({ className }: TortoiseASCIIProps) {
   return (
     <pre
+      className={className}
       style={{
         fontFamily: "monospace",
-        fontSize: fontSize,
+        fontSize: "10px",
         whiteSpace: "pre-wrap",
         color: "aliceblue",
       }}
