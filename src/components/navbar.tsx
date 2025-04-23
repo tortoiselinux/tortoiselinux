@@ -12,7 +12,7 @@ export default function Navbar() {
           </li>
 
           <li className="navbar-li">
-            <Link href="/developers">Desenvolvedores</Link>
+            <Link href="/contributors">Contribuidores</Link>
           </li>
           <li className="navbar-li">
             <Link href="/projects">Projetos</Link>

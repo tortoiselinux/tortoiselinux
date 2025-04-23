@@ -1,20 +1,18 @@
 import Link from "next/link";
+import Desc from "src/components/desc";
+import Title from "src/components/title";
+
 
 export default function Home() {
   return (
     <main>
       <section className="container">
-        <div className="card">
-          <Link href="https://github.com/wellyton-xs">
-            Wellyton B. Galdino (Criador do Tortoise)
-          </Link>
+        <div className="card big-container">
+            <div>
+            <Link href="https://github.com/wellyton-xs"><Title>Wellyton B. Galdino (Criador do tortoise)</Title></Link>
+            <Link href="https://www.behance.net/mariacsilva19"><Title>Cecília Barbosa (Designer)</Title></Link>
+            </div>
         </div>
-         <div className="card">
-          <Link href="https://www.behance.net/mariacsilva19">
-            Cecília Barbosa (Designer)
-          </Link>
-        </div>
-        
       </section>
     </main>
   );
