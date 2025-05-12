@@ -24,7 +24,7 @@ main {
   --main-bg-color: #1d1d1d;
   --txt-color: #ced2ad;
   --link-color: #477805;
-  --link-color-hover: #FFFFFF;
+  --link-color-hover: #ffffff;
   --border-color: #ced2ad;
 }
 
@@ -94,5 +94,5 @@ a:hover {
 
 #welcome-msg {
   font-size: larger;
-  font-weight: bolder;
+  font-weight: normal;
 }

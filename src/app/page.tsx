@@ -19,7 +19,7 @@ export default function Home() {
             <strong id="welcome-msg">
               <br />O tortoise é mais que uma distribuição, é um ecossistema de
               programação e nosso objetivo é integrar soluções sólidas e
-              consistentes! Para saber mais sobre as filosifias do projeto e
+              consistentes! Para saber mais sobre as filosofias do projeto e
               outros detalhes, leia a seção:&nbsp;
               <Link href="/about">Sobre</Link>
               <br />
