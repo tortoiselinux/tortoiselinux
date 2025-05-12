@@ -10,7 +10,6 @@ export default function TortoiseASCII({ className }: TortoiseASCIIProps) {
         fontFamily: "monospace",
         fontSize: "10px",
         whiteSpace: "pre-wrap",
-        color: "aliceblue",
       }}
     >
       {`████████╗ ██████╗ ██████╗ ████████╗ ██████╗ ██╗███████╗███████╗    ██╗     ██╗███╗   ██╗██╗   ██╗██╗  ██╗

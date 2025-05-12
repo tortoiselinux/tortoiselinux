@@ -9,7 +9,7 @@ export default async function Projects() {
   return (
     <main>
       <section className="container">
-        <div className="card">
+        <div className="">
           <h1>Projetos do Tortoise</h1>
           <Repos />
         </div>
