@@ -26,34 +26,34 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <a href="/features" className="nav-link px-2 text-white">
+          <Link href="/features" className="nav-link px-2 text-white">
             Features
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/docs" className="nav-link px-2 text-white">
+          <Link href="/docs" className="nav-link px-2 text-white">
             Docs
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/faq" className="nav-link px-2 text-white">
+          <Link href="/faq" className="nav-link px-2 text-white">
             FAQs
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/about" className="nav-link px-2 text-white">
+          <Link href="/about" className="nav-link px-2 text-white">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/members" className="nav-link px-2 text-white">
+          <Link href="/members" className="nav-link px-2 text-white">
             Members
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/projects" className="nav-link px-2 text-white">
+          <Link href="/projects" className="nav-link px-2 text-white">
             Projects
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -65,6 +65,7 @@ export default function Navbar() {
         <a
           href="https://github.com/tortoiselinux"
           className="btn btn-outline-light me-2"
+          target="_blank"
         >
           GitHub
         </a>
