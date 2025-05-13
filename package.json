@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -15,19 +15,24 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@types/react": "^18.3.3",
+    "@auth/core": "^0.34.2",
+    "@types/react": "19.1.4",
     "@vercel/analytics": "^1.3.1",
     "@vercel/speed-insights": "^1.0.12",
     "lunr": "^2.3.9",
-    "next": "^14.2.4",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "next": "15.3.2",
+    "next-auth": "^4.24.11",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@types/node": "20.14.5",
     "eslint": "^8",
-    "eslint-config-next": "^14.2.26",
+    "eslint-config-next": "15.3.2",
     "prettier": "3.5.3",
     "typescript": "5.4.5"
+  },
+  "overrides": {
+    "@types/react": "19.1.4"
   }
 }

@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="footer mt-auto d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       {" "}
       <div className="col-md-4 d-flex align-items-center">
         {" "}
-        <a
+        <Link
           href="/"
           className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
           aria-label="Bootstrap"
@@ -19,7 +20,7 @@ export default function Footer() {
             height={24}
             aria-hidden="true"
           />{" "}
-        </a>{" "}
+        </Link>{" "}
         <span className="mb-3 mb-md-0 text-body-secondary">
           © 2025 Wellyton Barbosa
         </span>{" "}

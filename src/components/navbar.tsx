@@ -1,9 +1,10 @@
+import Link from "next/link";
 import SearchBar from "./SearchBar";
 import Image from "next/image";
 export default function Navbar() {
   return (
     <div className="d-flex mb-auto flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      <a
+      <Link
         href="/"
         className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
       >
@@ -16,13 +17,13 @@ export default function Navbar() {
           aria-label="Tortoise"
           src="/assets/logo-icones/icone-light.png"
         />
-      </a>
+      </Link>
 
       <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
         <li>
-          <a href="/" className="nav-link px-2 text-secondary">
+          <Link href="/" className="nav-link px-2 text-secondary">
             Tortoise
-          </a>
+          </Link>
         </li>
         <li>
           <a href="/features" className="nav-link px-2 text-white">
@@ -67,11 +68,8 @@ export default function Navbar() {
         >
           GitHub
         </a>
-        <a
-          href="https://www.reddit.com/r/tortoiselinux/"
-          className="btn btn-warning"
-        >
-          Reddit
+        <a href="#" className="btn btn-warning">
+          Login
         </a>
       </div>
     </div>
