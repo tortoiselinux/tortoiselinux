@@ -15,4 +15,5 @@ export interface ICard {
   desc: string;
   imgURL: string;
   link: string;
+  sponsorLink: string;
 }

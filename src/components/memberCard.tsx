@@ -16,6 +16,15 @@ export default function MemberCard(props: ICard) {
         <a href={props.link} className="btn btn-primary">
           Ver mais
         </a>
+        {props.sponsorLink && (
+          <a
+            href={props.sponsorLink}
+            target="_blank"
+            className="btn btn-sponsor"
+          >
+            ❤️ Apoiar
+          </a>
+        )}
       </div>
     </div>
   );

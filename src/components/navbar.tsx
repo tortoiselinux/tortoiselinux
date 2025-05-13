@@ -1,7 +1,10 @@
 import Link from "next/link";
 import SearchBar from "./SearchBar";
 import Image from "next/image";
-export default function Navbar() {
+import { doLogin } from "src/app/actions";
+import { auth } from "src/auth";
+export default async function Navbar() {
+  const session = await auth();
   return (
     <div className="d-flex mb-auto flex-wrap align-items-center justify-content-center justify-content-lg-start">
       <Link
@@ -62,16 +65,36 @@ export default function Navbar() {
       </form>
 
       <div className="text-end">
-        <a
-          href="https://github.com/tortoiselinux"
-          className="btn btn-outline-light me-2"
-          target="_blank"
-        >
-          GitHub
-        </a>
-        <a href="#" className="btn btn-warning">
-          Login
-        </a>
+        <form className="" action={doLogin}>
+          <a
+            href="https://github.com/tortoiselinux"
+            className="btn btn-outline-light me-2"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          {!session?.user && (
+            <button
+              type="submit"
+              className="btn btn-warning"
+              name="action"
+              value="github"
+            >
+              Login
+            </button>
+          )}
+          {session?.user?.image && (
+            <Link href="/perfil">
+              <Image
+                alt="Avatar do usuário"
+                src={session.user.image}
+                width={48}
+                height={48}
+                className="rounded-circle"
+              />
+            </Link>
+          )}
+        </form>
       </div>
     </div>
   );

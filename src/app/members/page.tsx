@@ -1,14 +1,14 @@
 import MemberCard from "src/components/memberCard";
-import Title from "src/components/title";
 import { ICard } from "src/interfaces";
 
 const members: ICard[] = [
   {
     name: "Wellyton Barbosa",
-    desc: "Trabalhando diariamente em tartarugas",
+    desc: "",
     imgURL:
       "https://avatars.githubusercontent.com/u/98062977?s=400&u=6345f6b9f5d1437ed2fbcc734de292677ebd3e0b&v=4",
     link: "https://github.com/wellyton-xs",
+    sponsorLink: "https://github.com/sponsors/wellyton-xs",
   },
   {
     name: "Cecília Barbosa",
@@ -16,19 +16,24 @@ const members: ICard[] = [
     imgURL:
       "https://mir-s3-cdn-cf.behance.net/user/115/1a10fb1599260449.67eff2e57b921.jpg",
     link: "https://www.behance.net/mariacsilva19",
+    sponsorLink: "",
   },
 ];
 
 export default function Sobre() {
-  // const groupedMembers: ICard[][] = [];
-  // for (let i = 0; i < members.length; i += 3) {
-  //   groupedMembers.push(members.slice(i, i + 3));
-  // }
-  const groupedMembers = members.map((member) => [member]);
+  const groupedMembers: ICard[][] = [];
+  for (let i = 0; i < members.length; i += 3) {
+    groupedMembers.push(members.slice(i, i + 3));
+  }
+  // const groupedMembers = members.map((member) => [member]);
   return (
     <main className="container py-5">
       <section id="membros" className="mb-5">
-        <Title text="Membros do Projeto" />
+        <h1>Membros do Projeto</h1>
+        <p>
+          Uma ótima forma de apoiar o Tortoise, é patrocinar os desenvolvedores
+          que fazem a diferença!
+        </p>
         <div
           id="carouselExampleControls"
           className="carousel slide"

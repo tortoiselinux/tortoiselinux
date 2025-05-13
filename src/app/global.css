@@ -96,3 +96,22 @@ a:hover {
   font-size: larger;
   font-weight: normal;
 }
+
+.btn-sponsor {
+  display: inline;
+  background-color: #ff17f1 !important;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-sponsor:hover {
+  background-color: #df1869 !important;
+}
+
+.card {
+  background-color: var(--main-bg-color) !important;
+}
